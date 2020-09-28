@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding: 5rem;
+}
+
+body.dark{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+label{
+    display: inline-block;
+    background-color: slategrey;
+    height: 40px;
+    width: 90px;
+    border-radius: 90px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.ball{
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s; 
+}
+
+body.dark .ball{
+    background-color: #1f1f1f;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 3px;
+    left: 50px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s; 
+}
+
+input{
+    visibility: hidden;
+}
